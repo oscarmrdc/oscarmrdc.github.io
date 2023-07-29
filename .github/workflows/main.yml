@@ -1,11 +1,8 @@
 name: action-test
-on:
-  pull_request:
-    branches:
-      - master
-      - main
+on: push
 jobs:
-  deploy:
+  my_first_job:
+    name: My first job
     runs-on: ubuntu-latest
     steps:
     - name: execute command
